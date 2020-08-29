@@ -3,32 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Tugas5;
+package PemrogJaringan;
 
 /**
  *
- * @author YOUNGKY
+ * @author Alfin
  */
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.io.IOException;
 
-public class Soal1 
-{ public static void main(String[] args) 
-{ 
-ServerSocket theServer;
-System.out.println("Mendeteksi port yang aktif 500 - 1000:");
-for (int i = 500; i <= 1000; i++) 
-{ 
-    try 
-{ 
+public class Soal1 { p
+	public static void main(String[] args) { 
+		ServerSocket theServer;
+		System.out.println("Mendeteksi port yang aktif 500 - 1000:");
+for (int i = 500; i <= 1000; i++) { 
+    try { 
   	theServer = new ServerSocket(i); 
         theServer.close(); 
-} 
-catch (IOException e) 
-{ 
-System.out.println("There is a server on port " + i + "."); 
-} 
-} 
-} 
+	} 
+catch (IOException e) { 
+		System.out.println("There is a server on port " + i + "."); 
+					} 
+				} 
+		} 
 } 
